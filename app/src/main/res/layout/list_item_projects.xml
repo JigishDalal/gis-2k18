@@ -4,18 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="150dp"
     android:layout_margin="4dp"
-    android:elevation="50dp"
-    app:cardCornerRadius="5dp">
+    android:elevation="1dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
 
         <ImageView
             android:id="@+id/projectImage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:padding="5dp"
             android:layout_weight="1" />
 
         <TextView
@@ -27,7 +29,7 @@
             android:layout_marginTop="8dp"
             android:hint="Project"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

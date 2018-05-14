@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="8dp"
+            android:padding="5dp"
             android:gravity="center">
             <TextView
                 android:id="@+id/tv_all_story_title"
@@ -94,7 +94,6 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:visibility="visible" />
-
         </LinearLayout>
     </LinearLayout>
 </android.support.v7.widget.CardView>

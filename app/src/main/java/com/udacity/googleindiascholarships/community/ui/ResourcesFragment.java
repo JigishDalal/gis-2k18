@@ -1,9 +1,6 @@
 package com.udacity.googleindiascholarships.community.ui;
 
 
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -49,19 +46,9 @@ public class ResourcesFragment extends Fragment {
         resourcesRecyclerView = rootView.findViewById(R.id.blogs_recyclerView);
         resourcesRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         resourcesLinks = new ArrayList<ExternalLinks>();
-
-        if(checkInternetConnectivity()){
-            readFromFirebase();
-            blogAdapter = new BlogAdapter(getContext(),resourcesLinks);
-            resourcesRecyclerView.setAdapter(blogAdapter);
-        }else{
-            Toast.makeText(getContext(),"No internet connection",Toast.LENGTH_LONG).show();
-
-        }
-
-
-
-
+        readFromFirebase();
+        blogAdapter = new BlogAdapter(getContext(),resourcesLinks);
+        resourcesRecyclerView.setAdapter(blogAdapter);
         return rootView;
     }
 
@@ -90,19 +77,6 @@ public class ResourcesFragment extends Fragment {
 
         });
 
-    }
-
-    public boolean checkInternetConnectivity(){
-        //Check internet connection//
-        ConnectivityManager connectivityManager = (ConnectivityManager)getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
-        // Get details on the currently active default data network//
-        NetworkInfo netInformation = connectivityManager.getActiveNetworkInfo();
-        // If there is a network connection, then fetch data//
-        if(netInformation!=null && netInformation.isConnected()){
-            return true;
-        }else{
-            return false;
-        }
     }
 
 

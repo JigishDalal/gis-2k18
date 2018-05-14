@@ -17,7 +17,7 @@ import com.udacity.googleindiascholarships.ui.adapters.QuizAnnouncementsRecycler
 /**
  * Created by Sudhanshu on 12-05-2018.
  */
-//
+
 public class HomeFragment extends Fragment {
 
     AnnouncementsRecyclerViewAdapter announcementsRecyclerViewAdapter;

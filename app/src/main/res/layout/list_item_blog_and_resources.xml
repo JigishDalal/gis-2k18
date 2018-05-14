@@ -6,12 +6,12 @@
     android:layout_marginTop="4dp"
     android:layout_marginStart="4dp"
     android:layout_marginEnd="4dp"
+    android:layout_marginBottom="5dp"
     app:cardCornerRadius="4dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_gradient"
         android:orientation="vertical">
 
         <LinearLayout
@@ -37,7 +37,7 @@
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp"
                 android:text="Community"
-                android:textColor="@color/white" />
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <TextView
@@ -47,7 +47,7 @@
             android:ellipsize="end"
             android:padding="8dp"
             android:text="@string/default_description"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_below="@id/link_header"
             android:textSize="14sp" />
         <TextView
@@ -58,13 +58,13 @@
             android:maxLines="2"
             android:padding="8dp"
             android:text="@string/default_url"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_below="@+id/link_display_description"
             android:textSize="12sp"
             android:textStyle="italic" />
 
         <LinearLayout
-            android:background="@color/colorAccent"
+            android:background="@color/colorPrimaryDark"
             android:layout_below="@+id/link_display_url"
             android:orientation="horizontal"
             android:layout_width="match_parent"

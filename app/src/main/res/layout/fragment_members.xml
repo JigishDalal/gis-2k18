@@ -5,20 +5,22 @@
     android:layout_height="wrap_content"
     android:background="@color/white"
     android:orientation="vertical"
-    android:layout_gravity="center">
+    android:layout_gravity="top">
     <Button
         android:id="@+id/btn_phase1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:background="@color/colorPrimary"
-        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal"
         android:text="PHASE 1"
         android:textColor="@color/white"
         android:layout_marginBottom="30dp"/>
     <Button
         android:id="@+id/btn_phase2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
         android:background="@color/colorPrimary"
         android:layout_gravity="center"
         android:text="PHASE 2"
